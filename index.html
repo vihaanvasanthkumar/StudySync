@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySync Planner</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 StudySync - Student Planner</h1>
+
+    <div class="planner-section">
+      <h2>📋 Task Manager</h2>
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div class="planner-section">
+      <h2>🎯 Goal Tracker</h2>
+      <input type="text" id="goalInput" placeholder="Set a new goal..." />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </div>
+
+    <div class="planner-section">
+      <h2>🕒 Daily Schedule</h2>
+      <textarea id="scheduleInput" placeholder="Write your schedule here..."></textarea>
+    </div>
+
+    <button onclick="downloadPlan()">⬇️ Download My Plan</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
